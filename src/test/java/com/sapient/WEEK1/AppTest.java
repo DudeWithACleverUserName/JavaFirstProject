@@ -16,14 +16,24 @@ public class AppTest {
     public void testEvenNum() {
         System.out.println("Tests for even Numbers");
         assertTrue("Checking Even no.", app.check(4));
-        assertTrue("Checking Even no.", app.check(6));
     }
 
     @Test
     public void testOddNum() {
         System.out.println("Tests for odd Numbers");
-        assertFalse("Checking Odd no.", app.check(7));
-        assertFalse("Checking Odd no.", app.check(3));
+        assertFalse("Checking Odd no.", app.check(7));        
+    }
+
+    @Test
+    public void testNegativeEvenNum() {
+        System.out.println("Tests for Negative even Numbers");
+        assertTrue("Checking Even no.", app.check(-8));        
+    }
+
+    @Test
+    public void testNegativeOddNum() {
+        System.out.println("Tests for Negative odd Numbers");
+        assertFalse("Checking Odd no.", app.check(-3));
     }
 
     
