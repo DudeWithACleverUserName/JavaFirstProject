@@ -1,4 +1,4 @@
-package com.sapient.week2;
+package com.sapient.week4;
 
 import java.util.Arrays;
 import java.util.Scanner;
