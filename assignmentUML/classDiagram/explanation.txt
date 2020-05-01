@@ -1,0 +1,11 @@
+Class Diagram of an Order Management System
+
+classes => Customer, Order, NormalOrder, SpecialOrder 
+
+Explanation:
+
+-> Customer class has two attributes(name, location) and two methods for sending and receiving order.
+-> Order class also has two attributes(date, number) and two methods for confirming and closing the order.
+-> Order class is the superclass of the sub classes SpecialOrder and NormalOrder.
+-> Also the subclasses has extra methods to perform specific tasks such as dispatch or receive. 
+-> Customer and Order classes are connected with a 1..n relationship that is one customer can order n orders(n being a variable).

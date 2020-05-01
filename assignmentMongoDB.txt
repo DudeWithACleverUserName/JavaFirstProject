@@ -1,0 +1,115 @@
+Initalization:
+
+> use mongoTest
+switched to db mongoTest
+
+> db.Employee.insertMany([{
+...
+...     fname:'Yogesh',
+...     salary:[60000,55000,58000,63000,40000,60000,55000,58000,63000,70000,65000,59000],
+...     city: 'Delhi'
+... },
+... {
+...     fname:'Kandy',
+...     salary:[62000,50000,53000,53000,50000,70000,55000,58000,53000,40000,65000,69000],
+...     city: 'Noida'
+... },
+... {
+...     fname:'Aditya',
+...     salary:[50000,65000,78000,43000,73000,50000,53000,56000,63000,70000,65000,57000],
+...     city: 'Gurgaon'
+... },
+... {
+...     fname:'Akash',
+...     salary:[80000,25000,18000,67000,50000,67000,55000,68000,63000,20000,65000,19000],
+...     city: 'Delhi'
+... },
+... {
+...     fname:'Sumit',
+...     salary:[40030,65000,53000,23000,10000,40000,56000,53000,63000,70000,15000,59000],
+...     city: 'Gurgaon'
+... },
+... {
+...     fname:'Avinash',
+...     salary:[60000,55000,58000,63000,70000,60000,55000,58000,63000,70000,65000,59000],
+...     city: 'Delhi'
+... },
+... {
+...     fname:'Sahil',
+...     salary:[60000,75000,58000,43000,70000,60000,35000,58000,13000,70000,25000,59000],
+...     city: 'Bangalore'
+... },
+... {
+...     fname:'Anshul',
+...     salary:[60000,55000,58000,63000,70000,60000,55000,58000,63000,70000,65000,59000],
+...     city: 'Delhi'
+... },
+... {
+...     fname:'Kaushal',
+...     salary:[50000,53000,48000,33000,70000,60000,52000,58000,63000,60000,65000,57000],
+...     city: 'Bnagalore'
+... },
+... {
+...     fname:'Rahul',
+...     salary:[60000,55000,58000,63000,70000,60000,55000,58000,63000,70000,65000,59000],
+...     city: 'Noida'
+... },
+... {
+...     fname:'Shubham',
+...     salary:[60000,55000,88000,23000,73000,40000,55000,58000,63000,70000,65000,59000],
+...     city: 'Delhi'
+... },
+... {
+...     fname:'Bharat',
+...     salary:[60000,75000,58000,63000,78000,60000,55000,18000,63000,50000,65000,59000],
+...     city: 'Gurgaon'
+... }])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("5e983489e7271ac38191c414"),
+                ObjectId("5e983489e7271ac38191c415"),
+                ObjectId("5e983489e7271ac38191c416"),
+                ObjectId("5e983489e7271ac38191c417"),
+                ObjectId("5e983489e7271ac38191c418"),
+                ObjectId("5e983489e7271ac38191c419"),
+                ObjectId("5e983489e7271ac38191c41a"),
+                ObjectId("5e983489e7271ac38191c41b"),
+                ObjectId("5e983489e7271ac38191c41c"),
+                ObjectId("5e983489e7271ac38191c41d"),
+                ObjectId("5e983489e7271ac38191c41e"),
+                ObjectId("5e983489e7271ac38191c41f")
+        ]
+}
+
+------------------xx----------------------
+
+QUESTIONS:
+
+Ans1. db.Employee.find().pretty()
+
+Ans2. db.Employee.find({},{_id: 1, fname: 1}).pretty()
+
+Ans3. db.Employee.find({},{_id: 0}).pretty()          
+
+Ans4. db.Employee.find().limit(5).pretty()                    
+
+Ans5. db.Employee.find().skip(5).limit(5).pretty()
+
+Ans6. db.Employee.find({city: "Gurgaon"}).pretty()
+
+Ans7. db.Employee.find({"salary.0":{$lt: 20000}}).pretty()
+
+Ans8. db.Employee.find({"salary.0":{$lt: 20000},city: "Gurgaon"}).pretty()
+
+Ans9. db.Employee.aggregate([{
+...     $group:{
+...         _id: null,
+...         "TotalJanSalary":{
+...             $sum: {$arrayElemAt:["$salary",0]}
+...         }
+...     }
+... }])
+
+
+Ans10. db.Employee.find({city: "Gurgaon"}).count()

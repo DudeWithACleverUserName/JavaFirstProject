@@ -1,0 +1,10 @@
+Use Case Diagram of an Order Management System
+
+Actor(s) => Customer
+Use Cases => Order, Normal Order, Special Order
+
+Overview:
+
+-> Customer can interact with the Order Management System to place an order.
+-> Normal and special order are two types of order available.
+-> Customer can order from any of the available types. 

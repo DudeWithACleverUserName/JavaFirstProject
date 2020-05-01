@@ -1,0 +1,9 @@
+Activity diagram of an Order Management System
+
+Series of activities are as follows:
+
+-> The process starts with the customer sending an order request.
+-> Next the order request system confirms the receipt of the order.
+-> Type of the order is identified(normal or special).
+-> If the order type is different from the above two then the process is terminated.
+-> Else the order is confirmed and dispatched and the process is terminated.

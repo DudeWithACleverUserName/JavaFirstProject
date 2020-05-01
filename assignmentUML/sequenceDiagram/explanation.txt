@@ -1,0 +1,10 @@
+Sequence Diagram of an Order Management System
+
+Objects: Customer, Order, SpecialOrder, NormalOrder
+
+Messages:
+
+-> Customer interacts with the Order object by calling sendOrder() method.
+-> In turn Order object checks the type of order and confirms the type by calling confirm() method.
+-> Afetr confirming the type, Order is dispatched and an acknowledgment message is returned.
+-> This message is returned finally to the actor(customer).
