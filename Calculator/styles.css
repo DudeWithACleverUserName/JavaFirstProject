@@ -1,0 +1,97 @@
+/* HTML Elements */
+h6{
+    color: #0275d8;
+    text-align: left;
+    margin: 7px;
+    margin-bottom: 0px;
+}
+
+
+/* Remote Elements */
+
+.col-8, .col-9, .col-sm-8, .col-4, .col-sm-3, .col-3, .col-sm-4, .col-sm-6, .col-12, .col-sm-2{
+    padding: 0;
+}
+
+.jumbotron{
+    background-color: #0275d8;
+    color: #fff;
+    padding: 25px 20px;
+}
+
+.material-icons{
+    font-size: 20px;
+    margin: 0;
+
+}
+
+/* Local Elements */
+
+.calc-btn{
+    border: 1px solid #0275d8;
+    background-color: #fff;
+    color: #0275d8;
+    width: 96%;
+    padding: 9px 0;
+    border-radius: 7px;
+    outline: none !important;
+    font-size: 20px;
+}
+.calc-btn:hover, .calc-btn:active{
+    background-color: #0275d8;
+    color: #fff;    
+}
+
+.calc-btn:focus, .calc-btn:visited{
+    box-shadow: none;
+}
+
+.output{
+    width:90%;
+    height:50px;
+    text-align: right ;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #0275d8;
+    border: 1.5px solid #0275d8;
+    border-radius: 12px;
+    position: relative;
+    left: 10%;
+}
+.output p{
+    font-size: 20px;
+}
+.calc{
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 2%;
+}
+.content{
+    border: 1px solid #0275d8;    
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
+}
+.heading{
+
+    text-align: left ;
+
+}
+.content .row{
+    margin: 0;
+    padding: 1.7%;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px){
+    .calc{
+        width: 768px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .content, .output p{
+        font-size: 16px;
+    }
+    
+}

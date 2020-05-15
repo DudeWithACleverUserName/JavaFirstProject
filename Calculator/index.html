@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Remote Referneces -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Local Referneces -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container-fluid calc">
+
+        <!-- Application name -->
+        <div class="jumbotron heading">
+            <h1>Calculator</h1>
+            <hr class="my-4">
+            <h3>Result:</h1>
+                <div class="output">
+                    <p>0</p>
+                </div>
+        </div>
+
+        <!-- Operator section -->
+
+        <div class="content">
+            <h6>Operators:</h6>
+            <div class="row">
+
+
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">+</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">-</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">*</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">/</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">%</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">e^</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">mod</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">sin()</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">cos()</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">log()</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">tan()</button>
+                </div>
+                <div class="col-3 col-sm-2">
+                    <button type="button" class="calc-btn">+/-</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keypad Section -->
+
+        <div class="content">
+            <h6>Keypad:</h6>
+            <div class="row">
+
+                <div class="col-9 col-sm-8">
+
+                    <div class="row">
+
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">1</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">2</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">3</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">4</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">5</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">6</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">7</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">8</button>
+                        </div>
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">9</button>
+                        </div>
+                        <div class="col-8 col-sm-6">
+                            <button type="button" class="calc-btn">0</button>
+                        </div>
+
+                        <div class="col-4 col-sm-3">
+                            <button type="button" class="calc-btn">.</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-3 col-sm-4">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button type="button" class="calc-btn">C</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="button" class="calc-btn">AC</button>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="calc-btn">
+                                <span class="material-icons">
+                                    backspace
+                                </span>
+                            </button>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="calc-btn">=</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
