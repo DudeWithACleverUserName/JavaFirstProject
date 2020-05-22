@@ -1,0 +1,18 @@
+/* Part-1 */
+/* Part-2 */
+
+.emp-table{
+    border: 1px solid black;
+    margin: 1%;
+    padding: 0.7%;
+}
+
+.appearance{
+    display: none;
+}
+
+@media only screen and (min-width: 790px){
+    .emp-table{
+        width: 768px;
+    }
+}
