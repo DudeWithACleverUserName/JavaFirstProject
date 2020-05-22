@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp1"
+		class="com.sapient.springIOC.Employee.EmployeeBlueprint"
+		scope="prototype">
+		<property name="id" value="12"></property>
+		<property name="name" value="Yogesh"></property>
+		<property name="city" value="Delhi"></property>
+	</bean>
+	<bean id="emp2"
+		class="com.sapient.springIOC.Employee.EmployeeBlueprint"
+		scope="prototype">
+		<property name="id" value="13"></property>
+		<property name="name" value="Kandy"></property>
+		<property name="city" value="Delhi"></property>
+	</bean>
+	<bean id="emp3"
+		class="com.sapient.springIOC.Employee.EmployeeBlueprint"
+		scope="prototype">
+		<property name="id" value="14"></property>
+		<property name="name" value="Atri"></property>
+		<property name="city" value="Gurgaon"></property>
+	</bean>
+	<bean id="emp4"
+		class="com.sapient.springIOC.Employee.EmployeeBlueprint"
+		scope="prototype">
+		<property name="id" value="15"></property>
+		<property name="name" value="Pawan"></property>
+		<property name="city" value="Bangalore"></property>
+	</bean>
+	<bean id="emp5"
+		class="com.sapient.springIOC.Employee.EmployeeBlueprint"
+		scope="prototype">
+		<property name="id" value="16"></property>
+		<property name="name" value="Akash"></property>
+		<property name="city" value="Pune"></property>
+	</bean>
+</beans>
