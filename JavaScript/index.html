@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+
+<body>
+
+    <!-- Part-1 -->
+
+    <div class="part-1">
+        <div>
+            <p>Part-1</p>
+        </div>
+        <label for="num1">Enter number 1: </label>
+        <input type="number" placeholder="0" id="num1" required value="0">
+
+        <label for="num2">Enter number 2: </label>
+        <input type="number" placeholder="0" id="num2" required value="0">
+
+        <input type="radio" id="add" name="operation">
+        <label for="add">Add</label>
+        <input type="radio" id="subtract" name="operation">
+        <label for="subtract">Subtract</label>
+        <input type="radio" id="multiply" name="operation">
+        <label for="multiply">Multiply</label>
+        <input type="radio" id="divide" name="operation">
+        <label for="divide">Divide</label>
+        <h6>Result: <p class="result">0</p>
+        </h6>
+    </div>
+
+
+    <!-- Part-2 -->
+    <div class="part-2">
+        <div>
+            <p>Part-2</p>
+        </div>
+
+        <button class="btn btn-outline-primary emp-btn">Show Employee Details</button>
+        <button class="btn btn-outline-primary emp-name-btn">Get Employee by Name</button>
+
+        <div class="name-input appearance">
+            <input type="text" placeholder="Enter Employee Name" value="">
+            <button class="btn btn-outline-primary search-btn"> Search</button>
+        </div>
+
+        <div class="emp-table appearance">
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Employee ID</th>
+                        <th scope="col">Employee Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="EmployeeData.js"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
