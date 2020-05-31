@@ -1,9 +1,14 @@
+.jumbotron{
+    padding: 3%;
+}
 /* Part-1 */
+
+
 /* Part-2 */
 
 .emp-table{
     border: 1px solid black;
-    margin: 1%;
+    margin: 1% 0%;
     padding: 0.7%;
 }
 
@@ -11,8 +16,11 @@
     display: none;
 }
 
-@media only screen and (min-width: 790px){
+@media only screen and (min-width: 820px){
     .emp-table{
         width: 768px;
+    }
+    body{
+        width: 820px;
     }
 }

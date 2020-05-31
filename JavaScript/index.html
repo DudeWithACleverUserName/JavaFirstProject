@@ -15,41 +15,90 @@
 
     <!-- Part-1 -->
 
-    <div class="part-1">
+    <div class="part-1 jumbotron">
         <div>
-            <p>Part-1</p>
+            <h1 class="display-4">Part-1</h1>
         </div>
-        <label for="num1">Enter number 1: </label>
-        <input type="number" placeholder="0" id="num1" required value="0">
+        <p class="lead">Calculator Operations using radio buttons </p>
+        <hr class="my-4">
+        <div class="container-fluid">
+            <div class="row">
 
-        <label for="num2">Enter number 2: </label>
-        <input type="number" placeholder="0" id="num2" required value="0">
+                <div class="col-sm-6">
+                    <label for="num1">Enter number 1: </label>
+                    <input type="number" placeholder="0" id="num1" required value="0">
+                </div>
 
-        <input type="radio" id="add" name="operation">
-        <label for="add">Add</label>
-        <input type="radio" id="subtract" name="operation">
-        <label for="subtract">Subtract</label>
-        <input type="radio" id="multiply" name="operation">
-        <label for="multiply">Multiply</label>
-        <input type="radio" id="divide" name="operation">
-        <label for="divide">Divide</label>
-        <h6>Result: <p class="result">0</p>
-        </h6>
+                <div class="col-sm-6">
+                    <label for="num2">Enter number 2: </label>
+                    <input type="number" placeholder="0" id="num2" required value="0">
+                </div>
+
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <input type="radio" id="add" name="operation">
+                    <label for="add">Add</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="radio" id="subtract" name="operation">
+                    <label for="subtract">Subtract</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="radio" id="multiply" name="operation">
+                    <label for="multiply">Multiply</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="radio" id="divide" name="operation">
+                    <label for="divide">Divide</label>
+                </div>
+            </div>
+
+            <br>
+            <h4>Result: <p class="result">0</p>
+            </h4>
+
+
+
+            <div>
+
+            </div>
+        </div>
     </div>
 
 
     <!-- Part-2 -->
-    <div class="part-2">
+    <div class="part-2 jumbotron">
         <div>
-            <p>Part-2</p>
+            <h1 class="display-4">Part-2</h1>
         </div>
 
-        <button class="btn btn-outline-primary emp-btn">Show Employee Details</button>
-        <button class="btn btn-outline-primary emp-name-btn">Get Employee by Name</button>
+        <p class="lead">Functions on Employee Database </p>
 
-        <div class="name-input appearance">
-            <input type="text" placeholder="Enter Employee Name" value="">
-            <button class="btn btn-outline-primary search-btn"> Search</button>
+        <hr class="my-4">
+
+        <div class="conatiner-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <button class="btn btn-outline-primary emp-btn">Show Employee Details</button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-outline-primary emp-name-btn">Get Employee by Name</button>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="name-input appearance">
+                        <input type="text" placeholder="Enter Employee Name" value=""><br><br>
+                        <button class="btn btn-outline-primary search-btn"> Search</button>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="emp-table appearance">
