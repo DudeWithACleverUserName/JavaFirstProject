@@ -1,2 +1,3 @@
-# assignmentWeek2
+# Week 2 Assignment
+UML Diagrams, MongoDB & PostgreSQl
 
