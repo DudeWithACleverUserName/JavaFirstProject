@@ -1,1 +1,2 @@
-# assignmentWeek7
+# Week 7 Assignment
+Spring IOC & Javascript
