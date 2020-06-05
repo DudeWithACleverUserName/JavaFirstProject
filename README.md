@@ -1,3 +1,3 @@
 # Week 2 Assignment
-UML Diagrams, MongoDB & PostgreSQl
+UML Diagrams, MongoDB & PostgreSQL
 
