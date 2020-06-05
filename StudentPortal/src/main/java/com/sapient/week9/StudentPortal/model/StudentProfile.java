@@ -7,6 +7,18 @@ public class StudentProfile {
 	private int marks;
 	private char grade;
 
+	public StudentProfile() {
+		super();
+	}
+
+	public StudentProfile(int rollNumber, String name, int marks, char grade) {
+		super();
+		this.rollNumber = rollNumber;
+		this.name = name;
+		this.marks = marks;
+		this.grade = grade;
+	}
+
 	public int getRollNumber() {
 		return rollNumber;
 	}
